@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="js/totop.min.js"></script>
+<script src="js/jquery.gotop.js"></script>
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/menu.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
@@ -70,7 +69,7 @@
                         <div class="top-menu">
                             <div class="input-group">
                               <ul class="nav-right">
-                            <li><a href="#1" class="top-nav">商品分類</a><font color="#999999" size="2">　|　</font><a href="#2" class="top-nav">文章專區</a></li>
+                            <li><a href="./product.html" class="top-nav">商品分類</a><font color="#999999" size="2">　|　</font><a href="./blog.html" class="top-nav">文章專區</a></li>
                             <li class="fb-icon"><a href="./login.html">
                                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 </a>
@@ -92,11 +91,18 @@
             <div class="container">
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li><a href="./index.html">品牌介紹</a></li>
-                        <li><a href="">商品分類</a></li>
-                        <li><a href="#">會員專區</a></li>
-                        <li><a href="">聯絡我們</a></li>
-                        <li><a href="#">文章專區</a></li>
+                        <li><a href="./brand.html">品牌介紹</a></li>
+                        <li><a href="./product.html">商品分類</a>
+                        <ul class="dropdown">
+                                <li><a href="./product.html">【純銀．佛牌系列】</a></li>
+                                <li><a href="./product.html">【天然礦石 x 純銀】</a></li>
+                                <li><a href="./product.html">【時尚信仰區】</a></li>
+                                <li><a href="./product.html">【浪漫情人系列】</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./register.html">會員專區</a></li>
+                        <li><a href="./contact.html">聯絡我們</a></li>
+                        <li><a href="./blog.html">文章專區</a></li>
                         <li><a href="./login.html">登入/註冊</a></li>
                     </ul>
                 </nav>
@@ -185,7 +191,7 @@
                                 <h5>曜·龍銀珠手鍊</h5>
                             </a>
                             <div class="product-price">
-                                NT$599.00
+                                NT$599.00 <span>629.99</span>
                             </div>
                         </div>
                     </div>
@@ -203,7 +209,7 @@
                                 <h5>純銀手環</h5>
                             </a>
                             <div class="product-price">
-                                NT$599.00
+                                NT$599.00 <span>629.99</span>
                             </div>
                         </div>
                     </div>
@@ -221,7 +227,7 @@
                                 <h5>曜·龍銀珠手鍊</h5>
                             </a>
                             <div class="product-price">
-                                NT$599.00
+                                NT$599.00 <span>629.99</span>
                             </div>
                         </div>
                     </div>
@@ -239,7 +245,7 @@
                                 <h5>純銀戒指</h5>
                             </a>
                             <div class="product-price">
-                                NT$599.00
+                                NT$599.00 <span>629.99</span>
                             </div>
                         </div>
                     </div>
@@ -324,12 +330,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> 聖�
         
     </footer>
     <!-- Footer Section End -->
-<div class="totop"><i class="fa fa-angle-up"></i> To Top</div>
+<div class="right-float"><a href="#"class="btn btn-danger btn-circle-lg">客服</a></div>
+<div id="gotop"></div>
 <script>
-        $('.totop').tottTop({
-            scrollTop: 100
-        });
-    </script>
+$('#gotop').gotop({
+  customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+  bottom: '2em',
+  right: '2em'
+});
+</script>
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -11,13 +11,11 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></link>
-    
-<!-- top --> 
+   <!-- top --> 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="js/totop.min.js"></script>
+<script src="js/jquery.gotop.js"></script>
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -70,7 +68,7 @@
                         <div class="top-menu">
                             <div class="input-group">
                               <ul class="nav-right">
-                            <li><a href="#1" class="top-nav">商品分類</a><font color="#999999" size="2">　|　</font><a href="#2" class="top-nav">文章專區</a></li>
+                            <li><a href="./product.html" class="top-nav">商品分類</a><font color="#999999" size="2">　|　</font><a href="./blog.html" class="top-nav">文章專區</a></li>
                             <li class="fb-icon"><a href="./login.html">
                                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                                 </a>
@@ -83,7 +81,7 @@
                             </ul>
                             </div>
                         </div>
-                    </div>v
+                    </div>
                     
                 </div>
             </div>
@@ -92,11 +90,18 @@
             <div class="container">
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li><a href="./index.html">品牌介紹</a></li>
-                        <li><a href="">商品分類</a></li>
-                        <li><a href="#">會員專區</a></li>
-                        <li><a href="">聯絡我們</a></li>
-                        <li><a href="#">文章專區</a></li>
+                        <li><a href="./brand.html">品牌介紹</a></li>
+                        <li><a href="./product.html">商品分類</a>
+                        <ul class="dropdown">
+                                <li><a href="./product.html">【純銀．佛牌系列】</a></li>
+                                <li><a href="./product.html">【天然礦石 x 純銀】</a></li>
+                                <li><a href="./product.html">【時尚信仰區】</a></li>
+                                <li><a href="./product.html">【浪漫情人系列】</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./register.html">會員專區</a></li>
+                        <li><a href="./contact.html">聯絡我們</a></li>
+                        <li><a href="./blog.html">文章專區</a></li>
                         <li><a href="./login.html">登入/註冊</a></li>
                     </ul>
                 </nav>
@@ -127,17 +132,19 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
-                        <h2>登入/Login</h2>
+                        <h2 class="p-title--horizontal-ch-24">登　入<div class="title-text-center-eng">Login</div></h2>
                         <div class="btn-area"><a href="./verify2.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-facebook"></i> 快速登入</a></div>
 <div class="btn-area"><a href="./verify2.html" type="button" class="btn btn-success btn-lg btn-block"><i class="fab fa-line"></i> 快速登入</a></div>
                         <form action="#">
                             <div class="group-input">
                                 <label for="username">手機號碼 *</label>
                                 <input type="text" id="username">
+                                <div class="invalid-feedback">手機號碼為必填。</div>
                             </div>
                             <div class="group-input">
                                 <label for="pass">密 碼 *</label>
                                 <input type="text" id="pass">
+                                <div class="invalid-feedback">密碼輸入錯誤。</div>
                             </div>
                             <div class="group-input gi-check">
                                 <div class="gi-more">
@@ -238,12 +245,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> 聖�
         
     </footer>
     <!-- Footer Section End -->
-<div class="totop"><i class="fa fa-angle-up"></i> To Top</div>
+    <div class="right-float"><a href="#"class="btn btn-danger btn-circle-lg">客服</a></div>
+<div id="gotop"></div>
 <script>
-        $('.totop').tottTop({
-            scrollTop: 100
-        });
-    </script>
+$('#gotop').gotop({
+  customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+  bottom: '2em',
+  right: '2em'
+});
+</script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
