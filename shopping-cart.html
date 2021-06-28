@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Fashion 911">
+    <meta name="description" content="Fashi Template">
     <meta name="keywords" content="Fashi, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -170,59 +170,115 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb-text">
+                    <div class="breadcrumb-text product-more">
                         <a href="./index.html"><i class="fa fa-home"></i> 首頁</a>
-                        <span>登入/註冊</span>
+                        <a href="./product.html">商品分類</a>
+                        <span>購物確認</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb Form Section Begin -->
+    <!-- Breadcrumb Section Begin -->
 
-    <!-- Register Section Begin -->
-    <div class="register-login-section spad">
+    <!-- Shopping Cart Section Begin -->
+    <section class="shopping-cart spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="login-form">
-                        <h2 class="p-title--horizontal-ch-24">登　入<div class="title-text-center-eng">Login</div></h2>
-                        <div class="btn-area"><a href="./verify2.html" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-facebook"></i> 快速登入</a></div>
-<div class="btn-area"><a href="./verify2.html" type="button" class="btn btn-success btn-lg btn-block"><i class="fab fa-line"></i> 快速登入</a></div>
-                        <form action="#">
-                            <div class="group-input">
-                                <label for="username">手機號碼 *</label>
-                                <input type="text" id="username">
-                                <div class="invalid-feedback">手機號碼為必填。</div>
+                <div class="col-lg-12">
+                    <div class="cart-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>商品圖片</th>
+                                    <th class="p-name">商品名稱</th>
+                                    <th>價 格</th>
+                                    <th>數 量</th>
+                                    <th>確認金額</th>
+                                    <th><i class="ti-close"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cart-pic first-row"><img src="img/insta-1s.jpg" alt=""></td>
+                                    <td class="cart-title first-row">
+                                        <h5>曜·龍銀珠手鍊</h5>
+                                    </td>
+                                    <td class="p-price first-row">$599.00</td>
+                                    <td class="qua-col first-row">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="total-price first-row">$495.00</td>
+                                    <td class="close-td first-row"><i class="ti-close"></i></td>
+                                </tr>
+                               <tr>
+                                    <td class="cart-pic first-row"><img src="img/insta-1s.jpg" alt=""></td>
+                                    <td class="cart-title first-row">
+                                        <h5>曜·龍銀珠手鍊</h5>
+                                    </td>
+                                    <td class="p-price first-row">$599.00</td>
+                                    <td class="qua-col first-row">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="total-price first-row">$495.00</td>
+                                    <td class="close-td first-row"><i class="ti-close"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="cart-pic first-row"><img src="img/insta-1s.jpg" alt=""></td>
+                                    <td class="cart-title first-row">
+                                        <h5>曜·龍銀珠手鍊</h5>
+                                    </td>
+                                    <td class="p-price first-row">$599.00</td>
+                                    <td class="qua-col first-row">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="total-price first-row">$495.00</td>
+                                    <td class="close-td first-row"><i class="ti-close"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="cart-buttons">
+                                <a href="./product.html" class="primary-btn continue-shop">繼續購物</a>
+                                <a href="#" class="primary-btn up-cart">更新購物車</a>
                             </div>
-                            <div class="group-input">
-                                <label for="pass">密 碼 *</label>
-                                <input type="text" id="pass">
-                                <div class="invalid-feedback">密碼輸入錯誤。</div>
+                            <div class="discount-coupon">
+                                <h6>折扣代碼</h6>
+                                <form action="#" class="coupon-form">
+                                    <input type="text" placeholder="Enter your codes">
+                                    <button type="submit" class="site-btn coupon-btn">申請</button>
+                                </form>
                             </div>
-                            <div class="group-input gi-check">
-                                <div class="gi-more">
-                                    <label for="save-pass">
-                                        記住密碼
-                                        <input type="checkbox" id="save-pass">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <a href="#" class="forget-pass">忘記密碼</a>
-                                </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-4">
+                            <div class="proceed-checkout">
+                                <ul>
+                                    <li class="subtotal">小計 <span>$1480.00</span></li>
+                                    <li class="cart-total">總計金額 <span>$1480.00</span></li>
+                                </ul>
+                                <a href="#" class="proceed-btn">結算金額</a>
                             </div>
-                            <a href="./verify2.html" type="submit" class="btn site-btn login-btn">確認登錄</a>
-                        </form>
-                        <div class="switch-login">
-                            <a href="./register.html" class="or-login">加入會員</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Register Form Section End -->
-
-   
+    </section>
+    <!-- Shopping Cart Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -299,7 +355,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> 聖�
         
     </footer>
     <!-- Footer Section End -->
-    <div class="right-float"><a href="#"class="btn btn-danger btn-circle-lg">客服</a></div>
+<div class="right-float"><a href="#"class="btn btn-danger btn-circle-lg">客服</a></div>
 <div id="gotop"></div>
 <script>
 $('#gotop').gotop({

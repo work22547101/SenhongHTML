@@ -17,6 +17,16 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.gotop.js"></script>
 
+	<!--FontAwesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+	<!--mobile CSS Style-->
+    <link href="css/vgnav.css" rel="stylesheet" type="text/css">
+    <link href="css/vgnav-theme.css" rel="stylesheet" type="text/css">
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -67,6 +77,47 @@
                         </div>
                         <div class="top-menu">
                             <div class="input-group">
+                       <!--mobile menu-->     
+                            <div class="navigation">
+              <nav class="vg-nav vg-nav-lg">
+                <ul>
+                  <li class="active"><a href="./brand.html">品牌介紹</a></li>
+                  <li class="dropdown">
+                    <a href="#">商品分類</a>
+                    <ul class="left">
+                      <li class="dropdown">
+                        <a href="#">【天然礦石 x 純銀】</a>
+                        <ul class="left">
+                          <li class="dropdown">
+                            <a href="#">　+ 項鍊</a>
+                            <ul class="left">
+                              <li><a href="#">　　> 天上聖母．媽祖</a></li>
+                              <li><a href="#">　　> 925純銀 觀音菩薩</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#">　+ 手鍊 / 手環</a>
+                            <ul class="left">
+                              <li><a href="#">　　> 分類一</a></li>
+                              <li><a href="#">　　> 分類二</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                          
+            <li><a href="#">【時尚信仰區】</a></li>
+            <li><a href="#">【浪漫情人系列】</a></li>
+                    </ul>
+                  </li>
+                        <li><a href="./register.html">會員專區</a></li>
+                        <li><a href="./contact.html">聯絡我們</a></li>
+                        <li><a href="./blog.html">文章專區</a></li>
+                        <li><a href="./login.html">登入/註冊</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!--end-->
+            
                               <ul class="nav-right">
                             <li><a href="./product.html" class="top-nav">商品分類</a><font color="#999999" size="2">　|　</font><a href="./blog.html" class="top-nav">文章專區</a></li>
                             <li class="fb-icon"><a href="./login.html">
@@ -88,16 +139,19 @@
         </div>
         <div class="nav-item">
             <div class="container">
-                <nav class="nav-menu mobile-menu">
+                <nav class="nav-menu mobile-menu">                   
                     <ul>
                         <li><a href="./brand.html">品牌介紹</a></li>
                         <li><a href="./product.html">商品分類</a>
-                        <ul class="dropdown">
+                        <!--- scroll 新增可控制選單高度 --->
+                       <ul class="dropdown scroll">
                                 <li><a href="./product.html">【純銀．佛牌系列】</a></li>
                                 <li><a href="./product.html">【天然礦石 x 純銀】</a></li>
                                 <li><a href="./product.html">【時尚信仰區】</a></li>
                                 <li><a href="./product.html">【浪漫情人系列】</a></li>
-                            </ul>
+                                <li><a href="./product.html">【溫馨節慶系列】</a></li>
+                                <li><a href="./product.html">【良師益友系列】</a></li>
+                            </ul> 
                         </li>
                         <li><a href="./register.html">會員專區</a></li>
                         <li><a href="./contact.html">聯絡我們</a></li>
@@ -105,8 +159,8 @@
                         <li><a href="./login.html">登入/註冊</a></li>
                     </ul>
                 </nav>
-                <div id="mobile-menu-wrap"></div>
-            </div>
+                </div>
+                <!--<div id="mobile-menu-wrap"></div>-->           
         </div></div>
     </header>
     <!-- Header End -->
@@ -251,8 +305,15 @@ $('#gotop').gotop({
   right: '2em'
 });
 </script>
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/vgnav.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $('.vg-nav').vegasMenu();
+    })
+  </script>
+    <!-- Js Plugins <script src="js/jquery-3.3.1.min.js"></script>-->
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
