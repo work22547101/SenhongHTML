@@ -17,9 +17,16 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.gotop.js"></script>
 
-<!-- accordion css -->
-<link rel="stylesheet" type="text/css" href="css/accordion.css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!--FontAwesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+	<!--mobile CSS Style-->
+    <link href="css/vgnav.css" rel="stylesheet" type="text/css">
+    <link href="css/vgnav-theme.css" rel="stylesheet" type="text/css">
+
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -75,6 +82,47 @@
                         </div>
                         <div class="top-menu">
                             <div class="input-group">
+                       <!--mobile menu-->     
+                            <div class="navigation">
+              <nav class="vg-nav vg-nav-lg">
+                <ul>
+                  <li class="active"><a href="./brand.html">品牌介紹</a></li>
+                  <li class="dropdown">
+                    <a href="#">商品分類</a>
+                    <ul class="left">
+                      <li class="dropdown">
+                        <a href="#">【天然礦石 x 純銀】</a>
+                        <ul class="left">
+                          <li class="dropdown">
+                            <a href="#">　+ 項鍊</a>
+                            <ul class="left">
+                              <li><a href="#">　　> 天上聖母．媽祖</a></li>
+                              <li><a href="#">　　> 925純銀 觀音菩薩</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#">　+ 手鍊 / 手環</a>
+                            <ul class="left">
+                              <li><a href="#">　　> 分類一</a></li>
+                              <li><a href="#">　　> 分類二</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                          
+            <li><a href="#">【時尚信仰區】</a></li>
+            <li><a href="#">【浪漫情人系列】</a></li>
+                    </ul>
+                  </li>
+                        <li><a href="./register.html">會員專區</a></li>
+                        <li><a href="./contact.html">聯絡我們</a></li>
+                        <li><a href="./blog.html">文章專區</a></li>
+                        <li><a href="./login.html">登入/註冊</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!--end-->
+            
                               <ul class="nav-right">
                             <li><a href="./product.html" class="top-nav">商品分類</a><font color="#999999" size="2">　|　</font><a href="./blog.html" class="top-nav">文章專區</a></li>
                             <li class="fb-icon"><a href="./login.html">
@@ -96,15 +144,18 @@
         </div>
         <div class="nav-item">
             <div class="container">
-                <nav class="nav-menu mobile-menu">
+                <nav class="nav-menu mobile-menu">                   
                     <ul>
                         <li><a href="./brand.html">品牌介紹</a></li>
                         <li><a href="./product.html">商品分類</a>
-                       <ul class="dropdown">
+                        <!--- scroll 新增可控制選單高度 --->
+                       <ul class="dropdown scroll">
                                 <li><a href="./product.html">【純銀．佛牌系列】</a></li>
                                 <li><a href="./product.html">【天然礦石 x 純銀】</a></li>
                                 <li><a href="./product.html">【時尚信仰區】</a></li>
                                 <li><a href="./product.html">【浪漫情人系列】</a></li>
+                                <li><a href="./product.html">【溫馨節慶系列】</a></li>
+                                <li><a href="./product.html">【良師益友系列】</a></li>
                             </ul> 
                         </li>
                         <li><a href="./register.html">會員專區</a></li>
@@ -113,8 +164,8 @@
                         <li><a href="./login.html">登入/註冊</a></li>
                     </ul>
                 </nav>
-                <div id="mobile-menu-wrap"></div>
-            </div>
+                </div>
+                <!--<div id="mobile-menu-wrap"></div>-->           
         </div></div>
     </header>
     <!-- Header End -->
@@ -139,10 +190,10 @@
     <section class="product-shop spad page-details">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                  <div class="filter-widget">
-                    <h4 class="fw-title">分類商品</h4>
- <ul class="mtree transit">
+                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                    <div class="filter-widgets">
+                        <h4 class="fw-title">分類商品</h4>
+  <ul class="mtree transit">
     <li><a href="#">【純銀．佛牌系列】</a>
       <ul>
         <li><a href="#">項鍊</a>
@@ -166,24 +217,26 @@
             <li><a href="#">【時尚信仰區】</a></li>
             <li><a href="#">【浪漫情人系列】</a></li>
 </ul>
-
-<script src='http://cdnjs.cloudflare.com/ajax/libs/velocity/0.2.1/jquery.velocity.min.js'></script> 
+<script src="js/jquery.velocity.min.js"></script> 
 <script src="js/mtree.js"></script> 
                     </div>
-                    <div class="filter-widget">
+<div class="filter-widget">
                         <h4 class="fw-title">標記</h4>
                         <div class="fw-tags">
-                            <a href="#" class="active">純銀飾品</a>
-                            <a href="#">專屬禮盒</a>
-                            <a href="#">手工藝品</a>
-                            <a href="#">鍊子</a>
-                            <a href="#">客製化</a>
-                            <a href="#">男用</a>
-                            <a href="#">女用</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
+                    <div class="sortBtnArea">
+<ul>
+<li><a href="#" class="active">純銀飾品</a></li>
+<li><a href="#">專屬禮盒</a></li>
+<li><a href="#">手工藝品</a></li>
+<li><a href="#">鍊子</a></li>
+<li><a href="#">客製化</a></li>
+<li><a href="#">男用</a></li>
+<li><a href="#">女用</a></li>
+</ul>
+</div></div>
+</div>
+</div>
+                <div class="col-lg-9 order-1 order-lg-2">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
@@ -283,7 +336,7 @@
                                     
                                 </div>
                                 <!-- Button trigger modal -->
-<a href="#" class="primary-red-btn pd-cart" data-toggle="modal" data-target=".bd-example-modal-sm">加入購物車</a>
+<a href="#" class="btn primary-red-btn col-4 pd-cart" data-toggle="modal" data-target=".bd-example-modal-sm">加入購物車</a>
 <!-- Small modal -->
 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
@@ -297,8 +350,8 @@
     </div>
   </div>
 </div>
-<a href="./shopping-cart.html" class="primary-blue-btn pd-cart">結帳付款</a>
-<a href="#" class="primary-btn pd-cart" data-toggle="modal" data-target="#exampleModalCenter">查看購物清單</a>
+<a href="./shopping-cart.html" class="btn primary-blue-btn col-4 pd-cart">結帳付款</a>
+<a href="#" class="btn primary-btn col-4 pd-cart" data-toggle="modal" data-target="#exampleModalCenter">查看購物清單</a>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -390,7 +443,7 @@
     </div>
                                     
                                     <div class="select-button">
-                                        <a href="#" class="primary-btn checkout-btn" data-dismiss="modal" aria-label="Close">繼續購物</a>
+                                        <a href="#" class="primary-btn col-12 checkout-btn" data-dismiss="modal" aria-label="Close">繼續購物</a>
                                     </div>
                                 </div>
       </div>
@@ -481,7 +534,7 @@
 <p class="ms">印刷效果：立體印刷(依各別圖案不同，以實際收到款式為準)</p>
 </div></div>
 </div>
-<a href="#" class="btn primary-red-btn pd-cart" data-toggle="modal" data-target=".bd-example-modal-sm">加入購物車</a>
+<a href="#" class="btn primary-red-btn col-12 pd-cart" data-toggle="modal" data-target=".bd-example-modal-sm">加入購物車</a>
                          </div>
                         </div>
                     </div>
@@ -562,13 +615,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
                 <div class="related-products spad">
             <div class="row">
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+            <div class="container-scroll flex">
+    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-1.jpg" alt="">
+                            <img src="img/insta-2.jpg" alt="">
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
@@ -581,30 +634,11 @@
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+                    </div></div>
+<div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
                             <img src="img/insta-2.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                      </div>
-                        <div class="pi-text">
-                            <a href="#">
-                                <h5>純銀手環</h5>
-                            </a>
-                            <div class="product-price">
-                                NT$599.00 <span>629.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
@@ -617,46 +651,9 @@
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/insta-4.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                      </div>
-                        <div class="pi-text">
-                            <a href="#">
-                                <h5>純銀戒指</h5>
-                            </a>
-                            <div class="product-price">
-                                NT$599.00 <span>629.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                      </div>
-                        <div class="pi-text">
-                            <a href="#">
-                                <h5>純銀戒指</h5>
-                            </a>
-                            <div class="product-price">
-                                NT$599.00 <span>629.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
                             <img src="img/insta-2.jpg" alt="">
                             <div class="icon">
@@ -665,20 +662,87 @@
                       </div>
                         <div class="pi-text">
                             <a href="#">
-                                <h5>純銀戒指</h5>
+                                <h5>曜·龍銀珠手鍊</h5>
                             </a>
                             <div class="product-price">
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="img/insta-2.jpg" alt="">
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                      </div>
+                        <div class="pi-text">
+                            <a href="#">
+                                <h5>曜·龍銀珠手鍊</h5>
+                            </a>
+                            <div class="product-price">
+                                NT$599.00 <span>629.99</span>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="img/insta-2.jpg" alt="">
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                      </div>
+                        <div class="pi-text">
+
+                            <a href="#">
+                                <h5>曜·龍銀珠手鍊</h5>
+                            </a>
+                            <div class="product-price">
+                                NT$599.00 <span>629.99</span>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="img/insta-2.jpg" alt="">
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                      </div>
+                        <div class="pi-text">
+                            <a href="#">
+                                <h5>曜·龍銀珠手鍊</h5>
+                            </a>
+                            <div class="product-price">
+                                NT$599.00 <span>629.99</span>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="img/insta-2.jpg" alt="">
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                      </div>
+                        <div class="pi-text">
+                            <a href="#">
+                                <h5>曜·龍銀珠手鍊</h5>
+                            </a>
+                            <div class="product-price">
+                                NT$599.00 <span>629.99</span>
+                            </div>
+                        </div>
+                    </div></div>
+  </div>
             </div>
-    </div>
             </div>
         </div>
     </div>
-
     <!-- Related Products Section End -->
     <div class="related-products spad">
         <div class="container">
@@ -689,11 +753,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
                 <div class="related-products spad">
             <div class="row">
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+            <div class="container-scroll flex">
+    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
                             <img src="img/insta-1.jpg" alt="">
                             <div class="icon">
@@ -708,30 +772,11 @@
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+                    </div></div>
+<div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-2.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                      </div>
-                        <div class="pi-text">
-                            <a href="#">
-                                <h5>純銀手環</h5>
-                            </a>
-                            <div class="product-price">
-                                NT$599.00 <span>629.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
+                            <img src="img/insta-1.jpg" alt="">
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
@@ -744,64 +789,94 @@
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-4.jpg" alt="">
+                            <img src="img/insta-1.jpg" alt="">
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
                       </div>
                         <div class="pi-text">
                             <a href="#">
-                                <h5>純銀戒指</h5>
+                                <h5>曜·龍銀珠手鍊</h5>
                             </a>
                             <div class="product-price">
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
+                            <img src="img/insta-1.jpg" alt="">
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
                       </div>
                         <div class="pi-text">
                             <a href="#">
-                                <h5>純銀戒指</h5>
+                                <h5>曜·龍銀珠手鍊</h5>
                             </a>
                             <div class="product-price">
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="product-item">
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-2.jpg" alt="">
+                            <img src="img/insta-1.jpg" alt="">
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
                       </div>
                         <div class="pi-text">
                             <a href="#">
-                                <h5>純銀戒指</h5>
+                                <h5>曜·龍銀珠手鍊</h5>
                             </a>
                             <div class="product-price">
                                 NT$599.00 <span>629.99</span>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="img/insta-1.jpg" alt="">
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                      </div>
+                        <div class="pi-text">
+                            <a href="#">
+                                <h5>曜·龍銀珠手鍊</h5>
+                            </a>
+                            <div class="product-price">
+                                NT$599.00 <span>629.99</span>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="item flex-item col-lg-2">
+                        <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="img/insta-1.jpg" alt="">
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                      </div>
+                        <div class="pi-text">
+                            <a href="#">
+                                <h5>曜·龍銀珠手鍊</h5>
+                            </a>
+                            <div class="product-price">
+                                NT$599.00 <span>629.99</span>
+                            </div>
+                        </div>
+                    </div></div>
+  </div>
             </div>
-    </div>
             </div>
         </div>
     </div>
@@ -891,8 +966,8 @@ $('#gotop').gotop({
 });
 </script>
 
-<!-- jQuery --> 
-<script src="js/jquery-1.9.0.min.js"></script>
+<!-- jQuery <script src="js/jquery-1.9.0.min.js"></script>--> 
+
 <!-- jQueryTab.js --> 
 <script src="js/jQueryTab.js"></script> 
 <script type="text/javascript">
@@ -904,10 +979,16 @@ $('.tabs-7').jQueryTab({
     
 });
 
-
 </script>
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/vgnav.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $('.vg-nav').vegasMenu();
+    })
+  </script>
+    <!-- Js Plugins <script src="js/jquery-3.3.1.min.js"></script>-->
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>

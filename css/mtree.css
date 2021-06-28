@@ -1,3 +1,8 @@
+#mtree{
+	background-color: #111111;
+	width: 100%;
+}
+
 ul.mtree {
   opacity: 0;
   margin-left: 0;
@@ -107,7 +112,7 @@ ul.mtree.skinny ul a {
 }
 
 ul.mtree.transit {
-  background: #111;
+	background-color: #111111;
 }
 ul.mtree.transit ul {
   margin-left: 0;
@@ -227,4 +232,8 @@ ul.mtree.nix ul > li {
 }
 ul.mtree.nix li {
   list-style: disc;
+}
+@media (max-width:991px){
+	.filter-widgets {
+	display: none;}
 }
