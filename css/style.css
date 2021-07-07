@@ -96,6 +96,110 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+
+.font-red{
+	font-size: 18px;
+	font-weight: bold;
+	color: #F00;
+}
+
+.font-blk{
+	font-size: 15px;
+	color: #333;
+}
+
+.font-bu{
+	font-size: 15px;
+	color: #0066CC;
+	font-weight: bold;
+}
+
+.em-6{
+	float: left;
+	width: 50%;
+}
+
+.mycontent-left {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+}
+
+.sortBtnAreas{
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin: 0px;
+	transition: all 300ms ease-out 0s;
+
+}
+			.tableHead{
+				/*斜线表头的宽*/
+				min-width: 90px;				
+				/*超出范围隐藏*/
+				position: relative;
+				overflow: hidden;				 
+			}
+			.tableHead b {
+				font-size: 14px;
+				text-align: left;
+				white-space: nowrap;
+				/*固定文字位置*/
+				position: relative;
+		    top: 12px;
+		    left: -5px;
+				
+			}
+			
+			.tableHead .em {
+	font-size: 14px;
+	text-align: right;
+	white-space: nowrap;
+	/*固定文字位置*/
+	position: relative;
+	left: 5px;
+	top: -12px;
+			}
+			
+			/*斜线样式 宽度，位置 旋转角度*/
+			.tableHead .slopingside {
+				height: 0px;				
+		    border-bottom: 1px solid gray;
+		    width: 306px;		    
+		    margin-top: -2px;
+		    margin-left: -90px;
+		    position: absolute;
+		    transform: rotate(-158deg);
+				-o-transform: rotate(-158deg);
+				-moz-transform: rotate(-158deg));
+				-webkit-transform: rotate(-158deg);				  
+			}
+			.myHead{
+				overflow: hidden;
+				width: 80px;
+				position: relative;
+			}
+			.myHead::before{
+				content: '';
+		    position: absolute;
+		    width: 1px;
+		    height: 210px;
+		    top: 0;
+		    left: 0;
+		    background-color: #000;
+		    opacity: 0.5;
+		    display: block;
+		    transform: rotate(-72deg);
+		    transform-origin: top;
+		    overflow: hidden;
+			}
+			.myHead span:first-child{
+				padding-left: 100px;
+			}
+			.myHead span:last-child{
+				padding-right: 100px;
+			}
+
 .color-blak{color: #333;}
 .title-text-center{
 	text-align: center;
@@ -132,6 +236,7 @@ ol {
 	line-height: 2em;
 	font-weight: 700;
 	padding-right: 10px;
+	display: block;
 }
 
 .p-title--horizontal-ch-24 {
@@ -331,6 +436,12 @@ ol {
 .rows{
 	padding: 10px;
 }
+.rowsa{
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
 
 .rowss {
     display: -ms-flexbox;
@@ -378,6 +489,12 @@ ol {
 	overflow: scroll;
 	overflow-x: hidden;
 }
+
+.scrolls{
+	overflow-x:hidden;
+overflow-y:auto;
+}
+
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 20px;
@@ -1085,17 +1202,17 @@ ol {
 
 .inner-header .nav-right {
 	padding-top: 5px;
-	padding-right: 0;
+	padding-right: 0px;
 	padding-bottom: 5px;
-	padding-left: 0;
+	padding-left: 0px;
 	text-align: right;
 }
 
 .inner-header .nav-right li {
 	list-style: none;
 	display: inline-block;
-	font-size: 22px;
-	margin-left: 8px;
+	font-size: 24px;
+	margin-left: 10px;
 }
 
 .inner-header .nav-right li.fb-icon a {
@@ -1110,20 +1227,7 @@ ol {
 	display: inline-block;
 }
 
-.inner-header .nav-right li.heart-icon a span {
-	position: absolute;
-	right: -8px;
-	top: -1px;
-	height: 15px;
-	width: 15px;
-	background: #e7ab3c;
-	color: #ffffff;
-	border-radius: 50%;
-	font-size: 11px;
-	font-weight: 700;
-	text-align: center;
-	line-height: 15px;
-}
+
 
 .inner-header .nav-right li.cart-icon {
 	position: relative;
@@ -2385,6 +2489,10 @@ ol {
 	margin-bottom: 45px;
 	margin-top: 15px;
 }
+.filter-widgets {
+	margin-bottom: 45px;
+	margin-top: 15px;
+}
 
 .filter-widget .fw-title {
 	color: #252525;
@@ -2397,7 +2505,7 @@ ol {
 	color: #252525;
 	font-size: 22px;
 	font-weight: 700;
-	margin-bottom: 26px;
+	margin-bottom: 13px;
 }
 
 .filter-widget .filter-catagories li {
@@ -3384,6 +3492,10 @@ ol {
 .cart-table {
 	margin-bottom: 40px;
 }
+
+/*---------------------
+  Shopping Cart-0705
+-----------------------*/
 
 .cart-table table {
 	width: 100%;
@@ -4720,6 +4832,25 @@ ol {
 }
 
 @media only screen and (max-width: 991px) {
+.em-6{
+	float: left;
+	width: 100%;
+}	
+	
+.top-title{
+	background: linear-gradient(to top, #16376d, #3468be, #5992f0);
+	background: -webkit-linear-gradient(to top, #16376d, #3468be, #5992f0);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	text-align: right;
+	font-size: 126%;
+	font-style: italic;
+	line-height: 2em;
+	font-weight: 700;
+	padding-right: 10px;
+	display: none;
+}
 	
 	.news-area .em{
 	float: left;
@@ -4728,6 +4859,8 @@ ol {
 /*---------------------
  滑動區塊-menu CSS
 -----------------------*/
+
+
 .sortBtnArea{
 	width: 100%;
 	height: 60px;
@@ -4848,12 +4981,11 @@ ol {
 
 	.inner-header .advanced-search {
 	height: 36px;
-	border: 1px solid #ebebeb;
 	position: absolute;
 	z-index: 999;
-	top: 10px;
-	right: 0px;
-	display: none;
+	top: -40px;
+	right: 50px;
+	display: block;
 }
 	.banner-section {
 	padding-top: 20px;
@@ -4915,7 +5047,6 @@ ol {
 /* Tablet Device: 768px */
 
 @media only screen and (min-width: 991px) and (max-width: 991px) {
-
 	.header-top .ht-right .login-panel {
 		padding-left: 10px;
 	}
