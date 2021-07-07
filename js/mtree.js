@@ -25,18 +25,18 @@
     });
 
     // Set initial styles
-    $(".mtree-node").each((index,value) => {
-      if($(value).hasClass("mtree-open")){
+    $(".mtree-node").each((index, value) => {
+      if ($(value).hasClass("mtree-open")) {
         $(".mtree ul").css({
           overflow: "hidden",
-          height:   "auto",
-          display:  "block",
+          height: "auto",
+          display: "block",
         });
       } else {
         $(".mtree ul").css({
           overflow: "hidden",
           height: 0,
-          display: "none",
+          display: "block",
         });
       }
     });
@@ -55,85 +55,91 @@
     });
 
     // Set node click elements, preferably <a> but node links can be <span> also
-    node.children(":first-child").on("click.mtree", function (e) {
-      // element vars
-      var el = $(this).parent().children("ul").first();
-      var isOpen = $(this).parent().hasClass("mtree-open");
+    node
+      .children(":first-child")
+      .children(".slideBtn")
+      .on("click.mtree", function (e) {
+        // element vars
+        var el = $(this).parent().parent().children("ul").first();
+        var isOpen = $(this).parent().parent().hasClass("mtree-open");
 
-      // close other elements on same level if opening
-      if ((close_same_level || $(".csl").hasClass("active")) && !isOpen) {
-        var close_items = $(this)
-          .closest("ul")
-          .children(".mtree-open")
-          .not($(this).parent())
-          .children("ul");
+        // close other elements on same level if opening
+        if ((close_same_level || $(".csl").hasClass("active")) && !isOpen) {
+          var close_items = $(this)
+            .parent()
+            .closest("ul")
+            .children(".mtree-open")
+            .not($(this).parent().parent())
+            .children("ul");
 
-        // Velocity.js
+          // Velocity.js
+          if ($.Velocity) {
+            close_items.velocity(
+              {
+                height: 0,
+              },
+              {
+                duration: duration,
+                easing: easing,
+                display: "none",
+                delay: 100,
+                complete: function () {
+                  setNodeClass($(this).parent().parent(), true);
+                },
+              }
+            );
+
+            // jQuery fallback
+          } else {
+            close_items.delay(100).slideToggle(duration, function () {
+              setNodeClass($(this).parent().parent(), true);
+            });
+          }
+        }
+
+        // force auto height of element so actual height can be extracted
+        el.css({ height: "auto" });
+
+        // listAnim: animate child elements when opening
+        if (!isOpen && $.Velocity && listAnim)
+          el.find(" > li, li.mtree-open > ul > li")
+            .css({ opacity: 0 })
+            .velocity("stop")
+            .velocity("list");
+
+        // Velocity.js animate element
         if ($.Velocity) {
-          close_items.velocity(
+          
+          el.velocity("stop").velocity(
             {
-              height: 0,
+              //translateZ: 0, // optional hardware-acceleration is automatic on mobile
+              height: isOpen ? [0, el.innerHeight()] : [el.innerHeight(), 0],
             },
             {
+              queue: false,
               duration: duration,
               easing: easing,
-              display: "none",
-              delay: 100,
+              display: isOpen ? "block" : "block",
+              begin: setNodeClass($(this).parent().parent(), isOpen),
               complete: function () {
-                setNodeClass($(this).parent(), true);
+                if (!isOpen) $(this).css("height", 'auto');
               },
             }
           );
 
-          // jQuery fallback
+          // jQuery fallback animate element
         } else {
-          close_items.delay(100).slideToggle(duration, function () {
-            setNodeClass($(this).parent(), true);
-          });
+          setNodeClass($(this).parent().parent(), isOpen);
+          el.slideToggle(duration);
         }
-      }
 
-      // force auto height of element so actual height can be extracted
-      el.css({ height: "auto" });
-
-      // listAnim: animate child elements when opening
-      if (!isOpen && $.Velocity && listAnim)
-        el.find(" > li, li.mtree-open > ul > li")
-          .css({ opacity: 0 })
-          .velocity("stop")
-          .velocity("list");
-
-      // Velocity.js animate element
-      if ($.Velocity) {
-        el.velocity("stop").velocity(
-          {
-            //translateZ: 0, // optional hardware-acceleration is automatic on mobile
-            height: isOpen ? [0, el.outerHeight()] : [el.outerHeight(), 0],
-          },
-          {
-            queue: false,
-            duration: duration,
-            easing: easing,
-            display: isOpen ? "none" : "block",
-            begin: setNodeClass($(this).parent(), isOpen),
-            complete: function () {
-              if (!isOpen) $(this).css("height", "auto");
-            },
-          }
-        );
-
-        // jQuery fallback animate element
-      } else {
-        setNodeClass($(this).parent(), isOpen);
-        el.slideToggle(duration);
-      }
-
-      // We can't have nodes as links unfortunately
-      e.preventDefault();
-    });
+        // We can't have nodes as links unfortunately
+        e.preventDefault();
+      });
 
     // Function for updating node class
     function setNodeClass(el, isOpen) {
+      console.log("elelelelele",el);
       if (isOpen) {
         el.removeClass("mtree-open").addClass("mtree-closed");
       } else {
