@@ -315,6 +315,9 @@ ul.mtree.nix li {
   list-style: disc;
 }
 @media (max-width: 991px) {
+  .filter-widgetp{
+    display: none;
+  } 
   .filter-widgets {
     display: none;
   }
