@@ -128,6 +128,37 @@ ol {
 	width: 50%;
 }
 
+/*--- 商品選取 ---*/
+.pro-selectlink{
+	background-color: #FFF;
+	border: 0px solid #CCC;
+	padding: 0px;
+	float: left;
+}
+
+.pro-selectlink:link{
+	background-color: #FFF;
+	border: 1px solid #F90;
+	padding: 2px;
+	float: left;
+}
+
+.pro-selectlink:hover{
+	background-color: #FFF;
+	border: 1px solid #F90;
+	padding: 2px;
+	float: left;
+}
+.pro-selectlink .current{
+	background-color: #FFF;
+	border: 1px solid #9C0;
+	padding: 2px;
+	float: left;
+}
+
+
+/*--- 商品選取end ---*/
+
 .mycontent-left {
 	border-right-width: 1px;
 	border-right-style: solid;
