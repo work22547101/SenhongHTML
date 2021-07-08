@@ -97,7 +97,16 @@ ol {
 	margin: 0;
 }
 
+.pro-t{
+	margin-top: 50px;
+}
+
 .font-red{
+	font-size: 24px;
+	font-weight: bold;
+	color: #F00;
+}
+.font-reds{
 	font-size: 18px;
 	font-weight: bold;
 	color: #F00;
@@ -302,6 +311,8 @@ ol {
 	width: 50px;
 }
 
+
+
 .select-area{
 	float: left;
 	width: 100%;
@@ -354,6 +365,69 @@ ol {
 	font-size: 16px;
 	font-weight: bold;
 	color: #F00;
+}
+
+.shop-area{
+	float: left;
+	width: 100%;
+	color: #333;
+	border: 1px solid #CCC;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.shop-area .pic-area{
+	float: left;
+	width: 20%;
+}
+.shop-area .con-area{
+	float: left;
+	width: 80%;
+}
+
+.shop-area .pic-areas{
+	float: left;
+	width: 20%;
+}
+.shop-area .con-areas{
+	float: left;
+	width: 80%;
+}
+
+.shop-area .con-area-top{
+	float: left;
+	width: 100%;
+}
+
+.shop-area .con-area-em{
+	float: left;
+	width: 23%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+.shop-area .con-area-em-line{
+	float: left;
+	width: 22%;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+.shop-area .p-price{
+	color: #FF6600;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 2.5em;
+}
+.shop-area .total-price{
+	color: #e7ab3c;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 2.5em;
+	
 }
 
 .activity-area{
@@ -1212,13 +1286,28 @@ overflow-y:auto;
 	list-style: none;
 	display: inline-block;
 	font-size: 24px;
-	margin-left: 10px;
+	margin-left: 14px;
 }
 
 .inner-header .nav-right li.fb-icon a {
 	color: #000000;
 	position: relative;
 	display: inline-block;
+}
+
+.inner-header .nav-right li.fb-icon a span {
+	position: absolute;
+	right: -8px;
+	top: -1px;
+	height: 15px;
+	width: 15px;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 11px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 15px;
+	background-color: #CC33CC;
 }
 
 .inner-header .nav-right li.heart-icon a {
@@ -1691,9 +1780,9 @@ overflow-y:auto;
 
 .banner-section {
 	padding-top: 20px;
-	padding-right: 50px;
+	padding-right: 0px;
 	padding-bottom: 0px;
-	padding-left: 50px;
+	padding-left: 0px;
 }
 
 .single-banner {
@@ -2472,13 +2561,22 @@ overflow-y:auto;
 	color: #b2b2b2;
 }
 
+
+
+
 /*---------------------
   Product Shop
 -----------------------*/
 
 .product-shop {
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 80px;
+}
+
+
+.product-shops {
+	padding-top: 0px;
+	padding-bottom: 30px;
 }
 
 .filter-widget {
@@ -2489,7 +2587,7 @@ overflow-y:auto;
 	margin-bottom: 45px;
 	margin-top: 15px;
 }
-.filter-widgets {
+.filter-widgetp {
 	margin-bottom: 45px;
 	margin-top: 15px;
 }
@@ -2506,6 +2604,13 @@ overflow-y:auto;
 	font-size: 22px;
 	font-weight: 700;
 	margin-bottom: 13px;
+}
+
+.filter-widgetp .fw-title {
+	color: #252525;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 .filter-widget .filter-catagories li {
@@ -3594,6 +3699,56 @@ overflow-y:auto;
 	line-height: 40px;
 	float: left;
 }
+
+/*------*/
+.pro-close {
+	color: #FFF;
+	background-color: #F60;
+	position: absolute;
+	z-index: 888;
+	top: -1px;
+	right: -1px;
+	font-size: 36px;
+	line-height: 50px;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+
+.pro-qty {
+	width: 110px;
+	height: 46px;
+	border: 2px solid #ebebeb;
+	padding: 0 8px;
+	float: left;
+}
+
+.pro-qty .qtybtn {
+	font-size: 24px;
+	color: #b2b2b2;
+	float: left;
+	line-height: 38px;
+	cursor: pointer;
+	width: 18px;
+}
+
+.pro-qty .qtybtn.dec {
+	font-size: 30px;
+}
+
+.pro-qty input {
+	text-align: center;
+	width: 52px;
+	font-size: 14px;
+	font-weight: 700;
+	border: none;
+	color: #4c4c4c;
+	line-height: 40px;
+	float: left;
+}
+
+
 
 .cart-table table tr td.total-price {
 	width: 12%;
@@ -4832,6 +4987,38 @@ overflow-y:auto;
 }
 
 @media only screen and (max-width: 991px) {
+	
+
+.shop-area .pic-area{
+	float: left;
+	width: 20%;
+}
+.shop-area .con-area{
+	float: left;
+	width: 80%;
+}
+
+.shop-area .con-area-top{
+	float: left;
+	width: 100%;
+}
+
+.shop-area .con-area-em{
+	float: left;
+	width: 23%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+.shop-area .pic-areas{
+	float: left;
+	width: 100%;
+}
+.shop-area .con-areas{
+	float: left;
+	width: 100%;
+}
+
 .em-6{
 	float: left;
 	width: 100%;
@@ -4859,6 +5046,34 @@ overflow-y:auto;
 /*---------------------
  滑動區塊-menu CSS
 -----------------------*/
+.blogBtnArea{
+	width: 100%;
+	height: 120px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	background-color: #FFFFFF;
+	margin: 0px;
+	transition: all 300ms ease-out 0s;
+
+}
+.blogBtnArea ul,
+.blogBtnArea ul li {height:100px; padding:0px; list-style:none}
+.blogBtnArea ul {
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 300ms ease-out 0s;
+	white-space: nowrap;
+	font-size: 0;
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 0;
+}
+.blogBtnArea ul li {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box
+}
 
 
 .sortBtnArea{

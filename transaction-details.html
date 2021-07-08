@@ -22,7 +22,6 @@
     <!--[if IE 7]>
     <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
     <![endif]-->
-
 	<!--mobile CSS Style-->
     <link href="css/vgnav.css" rel="stylesheet" type="text/css">
     <link href="css/vgnav-theme.css" rel="stylesheet" type="text/css">
@@ -40,6 +39,7 @@
 </head>
 
 <body>
+
     <!-- Header Section Begin -->
     <header class="header-section">
     <div class="header-top">
@@ -111,7 +111,8 @@
                 </ul>
               </nav>
             </div>
-            <!--end--> 
+            <!--end-->
+            
                             </div>
                         </div>
                     </div>
@@ -151,9 +152,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb-text">
-                        <a href="./index.html"><i class="fa fa-home"></i> 首頁</a>
-                        <span>登入/註冊</span>
+                    <div class="breadcrumb-text product-more">
+                        <a href="./home.html"><i class="fa fa-home"></i> 首頁</a>
+                        <a href="./transaction-details.html">交易明細</a>
+                        <span>項目列表</span>
                     </div>
                 </div>
             </div>
@@ -165,28 +167,63 @@
     <div class="register-login-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="login-form">
-                    <h2 class="p-title--horizontal-ch-24">認　證<div class="title-text-center-eng">Verify</div></h2>
-                        <form action="#">
-                            <div class="group-input">
-                                <label for="phone">手機號碼 *</label>
-                                <input type="text" id="phone">
+                <div class="col-lg-12"><h2 class="p-title--horizontal-ch-24">交易明細<div class="title-text-center-eng">Transaction Details</div></h2>
+                <div class="container desc color-blak">
+
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1"><h5>訂購清單<div class="h-line"></div></h5></div>
+<div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5><i class="fa fa-file-text" aria-hidden="true"></i> 交易項目</h5>
+                                    </div>
+                                    <div class="card-body sortBtnAreas">
+
+                                    
+                                    <table class="table table-bordered">
+  <thead>
+    <tr>
+<th bgcolor="#ececec" scope="col" nowrap="nowrap">品 名</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">數 量</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">金 額</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">日 期</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td colspan="4"><div class="form-group">
+    <label for="exampleFormControlTextarea1">備註說明：</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+  </div></td>
+      </tr>
+  </tbody>
+</table></div>
                             </div>
-
-                            <a href="./verify2.html" type="submit" class="btn site-btn login-btn">發送簡訊</a>
-                        </form>
-			<br><br>
-                        <form action="#">
-
-                            <div class="group-input">
-                                <label for="verify">簡訊認證碼 *</label>
-                                <input type="text" id="verify">
-                            </div>
-
-                            <a href="./index.html" type="submit" class="btn site-btn login-btn">確認認證碼</a>
-                        </form>
-                    </div>
+    </div>
+    </div>
+    <!--/.row -->
+    <hr>
+  </div>
+  
+                
                 </div>
             </div>
         </div>
@@ -289,7 +326,6 @@ $('#gotop').gotop({
   right: '2em'
 });
 </script>
-
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/vgnav.min.js"></script>
 <script>
@@ -297,8 +333,12 @@ $('#gotop').gotop({
       $('.vg-nav').vegasMenu();
     })
   </script>
-    <!-- Js Plugins <script src="js/jquery-3.3.1.min.js"></script> -->
-   
+  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    <!-- Js Plugins <script src="js/jquery-3.3.1.min.js"></script>-->
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>

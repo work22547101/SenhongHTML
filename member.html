@@ -22,7 +22,6 @@
     <!--[if IE 7]>
     <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
     <![endif]-->
-
 	<!--mobile CSS Style-->
     <link href="css/vgnav.css" rel="stylesheet" type="text/css">
     <link href="css/vgnav-theme.css" rel="stylesheet" type="text/css">
@@ -40,6 +39,7 @@
 </head>
 
 <body>
+
     <!-- Header Section Begin -->
     <header class="header-section">
     <div class="header-top">
@@ -111,7 +111,8 @@
                 </ul>
               </nav>
             </div>
-            <!--end--> 
+            <!--end-->
+            
                             </div>
                         </div>
                     </div>
@@ -151,9 +152,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb-text">
-                        <a href="./index.html"><i class="fa fa-home"></i> 首頁</a>
-                        <span>登入/註冊</span>
+                    <div class="breadcrumb-text product-more">
+                        <a href="./home.html"><i class="fa fa-home"></i> 首頁</a>
+                        <a href="./member.html">會員專區</a>
+                        <span>個人資訊</span>
                     </div>
                 </div>
             </div>
@@ -165,28 +167,261 @@
     <div class="register-login-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="login-form">
-                    <h2 class="p-title--horizontal-ch-24">認　證<div class="title-text-center-eng">Verify</div></h2>
-                        <form action="#">
-                            <div class="group-input">
-                                <label for="phone">手機號碼 *</label>
-                                <input type="text" id="phone">
+                <div class="col-lg-12"><h2 class="p-title--horizontal-ch-24">會員專區<div class="title-text-center-eng">Member area</div></h2>
+                <div class="container desc color-blak">
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1"><h5>個人資訊<div class="h-line"></div></h5></div>
+<div class="col-12">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="idname" class="form-label">帳 號</label>
+              <input type="text" class="form-control" id="idname" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid idname is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="password" class="form-label">密 碼</label>
+              <input type="text" class="form-control" id="password" placeholder="" value="" required> 
+              <div class="invalid-feedback">
+                Valid password is required.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="username" class="form-label">姓 名</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <label for="birthday" class="form-label">生 日</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="birthday" placeholder="" required>
+              <div class="invalid-feedback">
+                  Your birthday is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="phone" class="form-label">手 機</label>
+              <input type="text" class="form-control" id="phone" placeholder="" required>
+              <div class="invalid-feedback">
+                Please enter your phone.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="address" class="form-label">住 址</label>
+              <input type="text" class="form-control" id="address" placeholder="" required>
+              <div class="invalid-feedback">
+                Please enter your address.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="Line" class="form-label">Line</label>
+              <input type="text" class="form-control" id="Line" placeholder="" required>
+              <div class="invalid-feedback">
+                Line code required.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="Facebook" class="form-label">Facebook</label>
+              <input type="text" class="form-control" id="Facebook" placeholder="" required>
+              <div class="invalid-feedback">
+                Facebook code required.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="twitter" class="form-label">twitter</label>
+              <input type="text" class="form-control" id="twitter" placeholder="" required>
+              <div class="invalid-feedback">
+                twitter code required.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="twitter" class="form-label">Youtube</label>
+              <input type="text" class="form-control" id="Youtube" placeholder="" required>
+              <div class="invalid-feedback">
+                Youtube code required.
+              </div>
+            </div>
+          </div>
+         <p class="area"><a href="#" class="btn btn-primary" type="submit">確認送出</a> <a href="#" class="btn btn-danger" type="submit">確認修改</a></p>
+        </form>
+    </div>
+    </div>
+    <!--/.row -->
+    <hr>
+
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1"><h5>會員等級<div class="h-line"></div></h5></div>
+<div class="col-12">
+                                <div class="card">
+                                    <div class="card-body sortBtnAreas">
+
+                                    
+                                    <table class="table table-bordered">
+  <thead>
+    <tr>
+				<!--斜线在th中-->
+				<th class="tableHead">
+					<b>日期</b>
+					<div class="slopingside"></div>
+					<span class="em">月份</span>
+				</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">一月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">二月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">三月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">四月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">五月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">六月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">七月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">八月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">九月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">十月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">十一月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">十二月</th>
+      <th bgcolor="#ececec" scope="col" nowrap="nowrap">會員分級辦法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" nowrap="nowrap">鑽石</th>
+      <td><img src="img/diamond-icon.png"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="font-blk">本月在消費<span class="font-reds">10000</span>元、<span class="font-reds">6</span>次 <span class="font-reds">09</span>月生等鑽石會員</td>
+    </tr>
+    <tr>
+      <th scope="row" nowrap="nowrap">白金</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="font-blk">本月在消費<span class="font-reds">5000</span>元、<span class="font-reds">4</span>次 <span class="font-reds">09</span>月生等白金會員</td>
+    </tr>
+    <tr>
+      <th scope="row" nowrap="nowrap">黃金</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="font-blk">本月在消費<span class="font-reds">1</span>元、<span class="font-reds">1</span>次 <span class="font-reds">09</span>月生等黃金會員</td>
+    </tr>
+    <tr>
+      <th scope="row" nowrap="nowrap">一般</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="font-blk">您目前等級 日期：<span class="font-bu">2021-0706</span></td>
+    </tr>
+  </tbody>
+</table></div>
                             </div>
-
-                            <a href="./verify2.html" type="submit" class="btn site-btn login-btn">發送簡訊</a>
-                        </form>
-			<br><br>
-                        <form action="#">
-
-                            <div class="group-input">
-                                <label for="verify">簡訊認證碼 *</label>
-                                <input type="text" id="verify">
+    </div>
+    </div>
+    <!--/.row -->
+    <hr>
+    
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1"><h5>交易記錄<div class="h-line"></div></h5></div>
+<div class="w-100">
+<div class="rowsa">
+  <div class="em-6"><div class="rowsa">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5><i class="fa fa-search" aria-hidden="true"></i> 訂單查詢</h5>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><div class="mycontent-left col-12">    
+<p>已出貨 <span class="font-red">0</span></p>
+<p>未出貨 <span class="font-red">0</span></p></div></td>
+    <td valign="top"> 
+<div class="col-12"> 
+<p>宅配中 <span class="font-red">0</span></p>
+</div>
+</td>
+  </tr>
+</table>
+</div>
+                            </div></div></div>
+  <div class="em-6"><div class="rowsa">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5><i class="fa fa-clipboard" aria-hidden="true"></i> 購買證明查詢</h5>
+                                    </div>
+                                    <div class="card-body">
+<div class="col-12">  
+<p>購入次數 <span class="font-red">0</span></p>
+<p>購入數量 <span class="font-red">0</span></p>
+<a href="transaction-details.html" class="btn btn-primary" type="submit">交易明細</a>
+</div></div>
                             </div>
+                            </div></div>
+</div>
 
-                            <a href="./index.html" type="submit" class="btn site-btn login-btn">確認認證碼</a>
-                        </form>
-                    </div>
+    </div>
+    </div>
+    <!--/.row -->
+    <hr>
+
+  </div>
+  
+                
                 </div>
             </div>
         </div>
@@ -289,7 +524,6 @@ $('#gotop').gotop({
   right: '2em'
 });
 </script>
-
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/vgnav.min.js"></script>
 <script>
@@ -297,8 +531,12 @@ $('#gotop').gotop({
       $('.vg-nav').vegasMenu();
     })
   </script>
-    <!-- Js Plugins <script src="js/jquery-3.3.1.min.js"></script> -->
-   
+  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    <!-- Js Plugins <script src="js/jquery-3.3.1.min.js"></script>-->
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
