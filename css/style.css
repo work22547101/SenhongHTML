@@ -59,8 +59,13 @@ p {
 	margin-top: 10px;
 }
 
+.s{
+	margin-top: 10px;
+}
+
 img {
 	max-width: 100%;
+	width: 100%;
 }
 
 .h-line{
@@ -88,7 +93,6 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
-	color: #fff;
 }
 
 ul,
@@ -112,6 +116,12 @@ ol {
 	color: #F00;
 }
 
+.font-redss{
+	font-size: 15px;
+	font-weight: bold;
+	color: #F00;line-height: 3.5em;
+}
+
 .font-blk{
 	font-size: 15px;
 	color: #333;
@@ -121,6 +131,13 @@ ol {
 	font-size: 15px;
 	color: #0066CC;
 	font-weight: bold;
+}
+
+.font-bus{
+	font-size: 18px;
+	color: #0066CC;
+	font-weight: bold;
+	line-height: 2.5em;
 }
 
 .em-6{
@@ -158,6 +175,27 @@ ol {
 
 
 /*--- 商品選取end ---*/
+
+.sortBtnAreaf{
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	background-color: #FFFFFF;
+	margin: 0px;
+	transition: all 300ms ease-out 0s;
+
+}
+.sortBtnAreaf ul,
+.sortBtnAreaf ul li { margin:0px; padding:0px; list-style:none}
+.sortBtnAreaf ul {width: 100%; border-bottom: 1px solid #d9d9d9; box-sizing: border-box; transition:all 300ms ease-out 0s; white-space:nowrap; font-size: 0; border: 0;}
+.sortBtnAreaf ul li {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box
+}
+.sortBtnAreaf ul li a {padding: 0 0px; color: #000000; text-decoration: none}
+.sortBtnAreaf ul li.selected {border-bottom:2px solid #d62872; color: #d62872; border-radius: 0px} 
+.sortBtnAreaf ul li.selected a {color: #d62872}
 
 .mycontent-left {
 	border-right-width: 1px;
@@ -405,24 +443,28 @@ ol {
 	border: 1px solid #CCC;
 	position: relative;
 	margin-bottom: 15px;
+	background-color: #FFEEDD;
 }
 
 .shop-area .pic-area{
 	float: left;
-	width: 20%;
+	width: 15%;
+	margin-bottom: 10px;
 }
+
+
 .shop-area .con-area{
 	float: left;
-	width: 80%;
+	width: 85%;
 }
 
 .shop-area .pic-areas{
 	float: left;
-	width: 20%;
+	width: 40%;
 }
 .shop-area .con-areas{
 	float: left;
-	width: 80%;
+	width: 60%;
 }
 
 .shop-area .con-area-top{
@@ -432,19 +474,15 @@ ol {
 
 .shop-area .con-area-em{
 	float: left;
-	width: 23%;
-	padding-right: 1%;
-	padding-left: 1%;
+	width: 33.3333%;
 }
 
 .shop-area .con-area-em-line{
 	float: left;
-	width: 22%;
+	width: 32.3333%;
 	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #CCC;
-	padding-right: 1%;
-	padding-left: 1%;
+	border-right-style: dashed;
+	border-right-color: #FFCD9B;
 }
 
 .shop-area .p-price{
@@ -454,8 +492,8 @@ ol {
 	line-height: 2.5em;
 }
 .shop-area .total-price{
-	color: #e7ab3c;
-	font-size: 16px;
+	color: #CC0000;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: 2.5em;
 	
@@ -541,12 +579,25 @@ ol {
 .rows{
 	padding: 10px;
 }
+.rowp{
+	padding: 10px;
+
+}
+.rowb{
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
 .rowsa{
 	padding-top: 0px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
+
+
 
 .rowss {
     display: -ms-flexbox;
@@ -738,6 +789,7 @@ overflow-y:auto;
 	margin-bottom: 25px;
 	margin-left: 5px;
 }
+
 
 .item {
 
@@ -3706,13 +3758,13 @@ overflow-y:auto;
 /*------*/
 .pro-close {
 	color: #FFF;
-	background-color: #F60;
+	background-color: #F33;
 	position: absolute;
 	z-index: 888;
 	top: -1px;
 	right: -1px;
-	font-size: 36px;
-	line-height: 50px;
+	font-size: 26px;
+	line-height: 40px;
 	padding-top: 0px;
 	padding-right: 5px;
 	padding-bottom: 0px;
@@ -3723,8 +3775,12 @@ overflow-y:auto;
 	width: 110px;
 	height: 46px;
 	border: 2px solid #ebebeb;
-	padding: 0 8px;
 	float: left;
+	padding-top: 0;
+	padding-right: 8px;
+	padding-bottom: 0;
+	padding-left: 8px;
+	background-color: #FFF;
 }
 
 .pro-qty .qtybtn {
@@ -4994,11 +5050,11 @@ overflow-y:auto;
 
 .shop-area .pic-area{
 	float: left;
-	width: 20%;
+	width: 40%;
 }
 .shop-area .con-area{
 	float: left;
-	width: 80%;
+	width: 60%;
 }
 
 .shop-area .con-area-top{
@@ -5006,12 +5062,6 @@ overflow-y:auto;
 	width: 100%;
 }
 
-.shop-area .con-area-em{
-	float: left;
-	width: 23%;
-	padding-right: 1%;
-	padding-left: 1%;
-}
 
 .shop-area .pic-areas{
 	float: left;
@@ -5021,6 +5071,23 @@ overflow-y:auto;
 	float: left;
 	width: 100%;
 }
+
+.shop-area .con-area-em{
+	float: left;
+	width: 100%;
+}
+
+.shop-area .con-area-em-line{
+	float: left;
+	width: 100%;
+	border-right-width: 0px;
+	border-right-style: dashed;
+	border-right-color: #FFCD9B;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #FFCD9B;
+}
+
 
 .em-6{
 	float: left;
@@ -5324,6 +5391,8 @@ overflow-y:auto;
 /* Large Device: 480px */
 
 @media only screen and (max-width: 991px) {
+	
+	
 	.rows{
 	padding: 10px;
 }
@@ -5604,4 +5673,22 @@ overflow-y:auto;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+}
+
+
+@media only screen and (max-width: 480px) {
+.rows{
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}	
+
+.shop-area .pic-area{
+	float: left;
+	width: 100%;
+}
+.shop-area .con-area{
+	float: left;
+	width:100%;
 }
