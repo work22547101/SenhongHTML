@@ -206,7 +206,7 @@ License:  GPLv3 ( http://www.gnu.org/licenses/gpl-3.0.html )
             : self.options.initialTab-1;	
 
         if(window.location.hash) {
-          var indexOfHash = self.tabLinks.index($('[href='+window.location.hash+']'));
+          var indexOfHash = self.tabLinks.index($('[href="'+window.location.hash+'"]'));
           if(indexOfHash !== -1) currentTab = indexOfHash;
         }
         return currentTab;
