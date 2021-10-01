@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--news0730 Css Styles -->
+    <link href="dist/jquery-popover-0.0.3.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -64,7 +66,30 @@
                                     <span>3</span>
                                 </a>
                                 </li>
-                                <li><div class="top-title">一次購足所有虔誠</div></li>
+                                <li class="cart-icon">
+                                <span class="popover-wrapper right">
+  <a href="#" data-role="popover" data-target="example-popover-2"><i class="fa fa-search" aria-hidden="true"></i></a>
+  <div class="popover-modal example-popover-2">
+    <div class="popover-body">
+     <div class="col-md-12">
+                                <div class="blog-sidebar">
+                                    <div class="search-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="商品搜尋 . . .  ">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+    </div>
+  </div>
+</span><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="dist/jquery-popover-0.0.3.js"></script>
+<script>
+$('[data-role="popover"]').popover();
+$('[data-role="popover2"]').popover({trigger: 'hover'});
+</script>
+                                </li>
                             </ul>
                             </div>
                         </div>

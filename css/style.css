@@ -44,6 +44,17 @@ h6 {
 	font-size: 16px;
 }
 
+
+.frame{ width: 250px; height:200px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
+
+.frame-pic{ width: 200px; height: 400px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; } 
+
+.frames{ width: 380px; height:380px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
+
+
 p {
 	font-size: 16px;
 	font-family: "Muli", sans-serif;
@@ -1261,7 +1272,7 @@ overflow-y:auto;
 	border: 0px solid #ebebeb;
 	position: absolute;
 	z-index: 999;
-	top: 0px;
+	top: 10px;
 	right: 0px;
 	display: block;
 }
@@ -1308,10 +1319,12 @@ overflow-y:auto;
 .inner-header .advanced-search .input-group input {
 	width: 100%;
 	height: 100%;
-	border: none;
+	border: 1px solid #CCC;
 	font-size: 16px;
 	color: #333333;
-	padding-left: 20px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 7px;
 }
 
 .inner-header .advanced-search .input-group button {
@@ -2966,6 +2979,9 @@ overflow-y:auto;
 	display: -ms-flexbox;
 	display: flex;
 	color: #333;
+	flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .product-show-option .select-option .nice-select {
@@ -2997,7 +3013,7 @@ overflow-y:auto;
 }
 
 .product-show-option .select-option .sorting {
-	margin-right: 20px;
+	margin-right: 0px;
 	color: #333;
 }
 
@@ -4145,6 +4161,7 @@ overflow-y:auto;
 }
 
 .blog-sidebar .search-form {
+	border: 0px solid #CCC;
 
 }
 
@@ -4162,7 +4179,7 @@ overflow-y:auto;
 	height: 40px;
 	width: 100%;
 	border: 1px solid #ECECEC;
-	padding-left: 20px;
+	padding-left: 10px;
 	font-size: 16px;
 	color: #b2b2b2;
 }
@@ -4984,7 +5001,7 @@ overflow-y:auto;
 
 /* ------------------------------ Responsive Media Styles ---------------------------- */
 
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media only screen and (min-width: 1200px) {
 	.inner-header .advanced-search .input-group button {
 		right: -14px;
 	}
@@ -4997,18 +5014,31 @@ overflow-y:auto;
 	padding-bottom: 16px;
 	padding-left: 45px;
 	}
+	
+		.frame-pic{ width: 450px; height:250px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+.frames{ width: 360px; height:360px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
 }
 
 @media only screen and (min-width: 1200px) {
 	.container {
-		max-width: 1170px;
+		max-width: 1280px;
 	}
 }
 
 /* Medium Device: 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+.frame{ width: 250px; height:150px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
+
+.frames{ width: 300px; height:300px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
 	
+.frame-pic{ width: 350px; height:200px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+
 
 	.inner-header .advanced-search .category-btn {
 		max-width: 36%;
@@ -5046,7 +5076,9 @@ overflow-y:auto;
 }
 
 @media only screen and (max-width: 991px) {
-	
+	.frame-pic{ width: 350px; height:200px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+
 
 .shop-area .pic-area{
 	float: left;
@@ -5269,7 +5301,7 @@ overflow-y:auto;
 	position: absolute;
 	z-index: 999;
 	top: -40px;
-	right: 50px;
+	right: 60px;
 	display: block;
 }
 	.banner-section {
@@ -5586,13 +5618,34 @@ overflow-y:auto;
 	left: 140px;
 	width:700px;
 }
-	
+.frames{ width: 240px; height:240px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }	
 }
 
+@media only screen and (max-width: 769px) {
+.frame-pic{ width: 350px; height:200px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+.frame{ width: 250px; height:150px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
+.frames{ width: 230px; height:230px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
+}
+@media only screen and (max-width: 680px) {
+.frame-pic{ width: 250px; height:200px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+.frames{ width: 170px; height:170px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
+}
 /* Small Device: 320px */
 
 @media only screen and (max-width: 479px) {
+	.frame-pic{ width: 380px; height:200px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+.frame{ width: 250px; height:220px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
 
+.frames{ width: 140px; height:140px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
 		.product-show-option {
 	margin-bottom: 0px;
 }
@@ -5691,4 +5744,34 @@ overflow-y:auto;
 .shop-area .con-area{
 	float: left;
 	width:100%;
+}
+}
+@media only screen and (max-width: 414px) {
+.frame-pic{ width: 350px; height:200px; } 
+.frame-pic img{ width: 100%; height: 100%; object-fit: cover; }
+
+.frame{ width: 250px; height:180px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
+
+.frames{ width: 120px; height:120px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
+}
+
+@media only screen and (max-width: 379px) {
+
+.frame{ width: 250px; height:160px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
+.frames{ width: 110px; height:110px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+.frame{ width: 250px; height:140px; } 
+.frame img{ width: 100%; height: 100%; object-fit: cover; }
+.frames{ width: 90px; height:90px; } 
+.frames img{ width: 100%; height: 100%; object-fit: cover; }
+
 }
