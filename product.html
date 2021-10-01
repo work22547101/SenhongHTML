@@ -42,6 +42,8 @@
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/mtree.css" type="text/css">
+    <!--news0730 Css Styles -->
+    <link href="dist/jquery-popover-0.0.3.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -69,9 +71,30 @@
                                                 <span>3</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <div class="top-title">一次購足所有虔誠</div>
-                                        </li>
+                                        <li class="cart-icon">
+                                <span class="popover-wrapper right">
+  <a href="#" data-role="popover" data-target="example-popover-2"><i class="fa fa-search" aria-hidden="true"></i></a>
+  <div class="popover-modal example-popover-2">
+    <div class="popover-body">
+     <div class="col-md-12">
+                                <div class="blog-sidebar">
+                                    <div class="search-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="商品搜尋 . . .  ">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+    </div>
+  </div>
+</span><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="dist/jquery-popover-0.0.3.js"></script>
+<script>
+$('[data-role="popover"]').popover();
+$('[data-role="popover2"]').popover({trigger: 'hover'});
+</script>
+                                </li>
                                     </ul>
                                 </div>
                             </div>
@@ -273,46 +296,17 @@
                         <script src="js/jquery.velocity.min.js"></script>
                         <script src="js/mtree.js"></script>
                     </div>
-                    <div class="filter-widget">
-                        <h4 class="fw-title">標記</h4>
-                        <div class="fw-tags">
-                            <div class="sortBtnArea">
-                                <ul>
-                                    <li> <a href="#" class="active">純銀飾品</a>
-                                        <a href="#">專屬禮盒</a>
-                                        <a href="#">手工藝品</a>
-                                        <a href="#">鍊子</a>
-                                        <a href="#">客製化</a>
-                                        <a href="#">男用</a>
-                                        <a href="#">女用</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-9 order-1 order-lg-2">
                     <div class="product-show-option">
                         <div class="rowss">
-                            <div class="col-md-6">
-                                <div class="select-option">
-                                    <select class="sorting">
-                                        <option value="">店長推薦</option>
-                                        <option>最新上架</option>
-                                        <option>人氣商品</option>
-                                        <option>價錢低到高</option>
+                            <div class="col-md-12">
+                                 <div class="select-option">
+                                    <select class="sorting text-right">
+                                        <option  value="">價錢低到高</option>
                                         <option>價錢高到低</option>
                                     </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blog-sidebar">
-                                    <div class="search-form">
-                                        <form action="#">
-                                            <input type="text" placeholder="商品搜尋 . . .  ">
-                                            <button type="submit"><i class="fa fa-search"></i></button>
-                                        </form>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +316,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-1.jpg" alt="">
+                            <div class="frame"><img src="img/insta-1.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -337,7 +331,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-2.jpg" alt="">
+                            <div class="frame"><img src="img/insta-2.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -352,7 +346,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
+                            <div class="frame"><img src="img/insta-3.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -367,7 +361,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-4.jpg" alt="">
+                            <div class="frame"><img src="img/insta-4.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -382,7 +376,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-1.jpg" alt="">
+                            <div class="frame"><img src="img/insta-1.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -397,7 +391,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-2.jpg" alt="">
+                            <div class="frame"><img src="img/insta-2.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -412,7 +406,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
+                            <div class="frame"><img src="img/insta-3.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -427,7 +421,7 @@
                            <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-4.jpg" alt="">
+                            <div class="frame"><img src="img/insta-4.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -442,7 +436,7 @@
                             <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-1.jpg" alt="">
+                            <div class="frame"><img src="img/insta-1.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -457,7 +451,7 @@
                <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-2.jpg" alt="">
+                            <div class="frame"><img src="img/insta-2.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -472,7 +466,7 @@
                 <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-3.jpg" alt="">
+                            <div class="frame"><img src="img/insta-3.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -487,7 +481,7 @@
                 <div class="col-6 col-sm-3">
                     <a href="./product-info.html"><div class="product-item">
                         <div class="pi-pic">
-                            <img src="img/insta-4.jpg" alt="">
+                            <div class="frame"><img src="img/insta-4.jpg" alt=""></div>
                       </div>
                         <div class="pi-text">
                         <div class="catagory-name">純銀飾品</div>
@@ -503,7 +497,7 @@
                      <div class="row justify-content-center align-items-center"><nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item"><a class="page-link" href="#">下一頁</a></li>
