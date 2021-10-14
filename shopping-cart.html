@@ -319,7 +319,6 @@ $('[data-role="popover2"]').popover({trigger: 'hover'});
                         <div class="col-lg-4">
                             <div class="cart-buttons">
                                 <a href="./product.html" class="primary-btn continue-shop">繼續購物</a>
-                                <a href="#" class="primary-btn up-cart">更新購物車</a>
                             </div>
                             <div class="discount-coupon">
                                 <h6>折扣代碼</h6>
@@ -335,7 +334,7 @@ $('[data-role="popover2"]').popover({trigger: 'hover'});
                                     <li class="subtotal">小計 <span>$1480.00</span></li>
                                     <li class="cart-total">總計金額 <span>$1480.00</span></li>
                                 </ul>
-                                <a href="#" class="proceed-btn">結算金額</a>
+                                <div class="proceed-btn">結算金額</div>
                             </div>
                         </div>
                         
@@ -361,51 +360,83 @@ $('[data-role="popover2"]').popover({trigger: 'hover'});
     </div>
     <hr>
     <div class="row">
-  <div class="col-12">
-    <h4 class="mb-3">收件人資料：</h4>
-<form class="needs-validation" novalidate>
-          <div class="row g-3">
-          <div class="col-12">
-<div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">收件人資料同訂購人</label>
-  </div></div>
-            <div class="col-md-3">
-              <label for="username" class="form-label">姓 名</label>
-              <div class="input-group has-validation">
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
-              <div class="invalid-feedback">
-                  Your username is required.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-          </div>
-
-            <div class="col-sm-3">
-              <label for="phone" class="form-label">聯絡人手機</label>
-              <input type="text" class="form-control" id="phone" placeholder="" required>
-              <div class="invalid-feedback">
-                Please enter your phone.
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <label for="address" class="form-label">寄送地址</label>
-              <input type="text" class="form-control" id="address" placeholder="" required>
-              <div class="invalid-feedback">
-                Please enter your address.
-              </div>
-            </div>
-          </div>
-        </form>
-    </div></div>
-   <hr> 
+		<div class="col-12">
+			<h4 class="mb-3">寄件人資料：</h4>
+			<form class="needs-validation" novalidate>
+			<div class="row g-3">
+				<div class="col-12">
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">寄件人資料同會員資料</label>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<label for="username" class="form-label">姓 名</label>
+					<div class="input-group has-validation">
+						<input type="text" class="form-control" id="username" placeholder="Username" required>
+						<div class="invalid-feedback">
+							Your username is required.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<label for="phone" class="form-label">寄件人手機</label>
+					<input type="text" class="form-control" id="phone" placeholder="" required>
+					<div class="invalid-feedback">
+						Please enter your phone.
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<label for="address" class="form-label">寄件人地址</label>
+					<input type="text" class="form-control" id="address" placeholder="" required>
+					<div class="invalid-feedback">
+						Please enter your address.
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+    <hr>
+    <div class="row">
+		<div class="col-12">
+			<h4 class="mb-3">收件人資料：</h4>
+			<form class="needs-validation" novalidate>
+			<div class="row g-3">
+				<div class="col-12">
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">收件人資料同訂購人</label>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<label for="username" class="form-label">姓 名</label>
+					<div class="input-group has-validation">
+						<input type="text" class="form-control" id="username" placeholder="Username" required>
+						<div class="invalid-feedback">
+							Your username is required.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<label for="phone" class="form-label">收件人手機</label>
+					<input type="text" class="form-control" id="phone" placeholder="" required>
+					<div class="invalid-feedback">
+						Please enter your phone.
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<label for="address" class="form-label">寄送地址</label>
+					<input type="text" class="form-control" id="address" placeholder="" required>
+					<div class="invalid-feedback">
+						Please enter your address.
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	<hr> 
     <div class="row">
 <div class="col-12"><h4 class="mb-3">發票資訊：</h4>
 <p>依<a href="https://www.einvoice.nat.gov.tw/" target="_blank">統一發票使用辦法</a>辦法規定：發票一經開立不得任意更改或改開發票，請務必確認資訊正確。</p>
